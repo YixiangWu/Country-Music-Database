@@ -26,3 +26,15 @@ CREATE TABLE demographics (
 );
 
 COPY demographics FROM '/path/to/demographics.csv' WITH (FORMAT CSV, HEADER);
+
+
+CREATE TABLE song_rankings (
+    year INTEGER,
+    rank INTEGER,
+    song VARCHAR(100),
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    stage_name VARCHAR(50)
+);
+
+COPY song_rankings FROM '/path/to/song_rankings.csv' WITH (FORMAT CSV, HEADER);
